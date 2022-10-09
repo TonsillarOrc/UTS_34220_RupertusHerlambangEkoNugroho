@@ -5,9 +5,7 @@
     <string name="keluar">Keluar</string>
     <string name="myname">Rupertus Herlambang Eko Nugroho</string>
     <string name="nim">00000034220</string>
-    <string name="matakuliah">IF 570 - EL</string>
+    <string name="matakuliah">IF 570 - ELHY</string>
     <string name="referensi">REFERENSI</string>
     <string name="next">NEXT</string>
-    <string name="loginpage">LOGIN PAGE</string>
-    <string name="play">PLAY SFX</string>
 </resources>

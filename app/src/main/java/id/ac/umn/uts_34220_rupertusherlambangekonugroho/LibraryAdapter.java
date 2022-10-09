@@ -1,4 +1,4 @@
-package id.ac.umn.uts_;
+package id.ac.umn.uts_34220_rupertusherlambangekonugroho;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

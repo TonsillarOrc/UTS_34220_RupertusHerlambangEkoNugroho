@@ -1,8 +1,4 @@
-package id.ac.umn.uts_;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+package id.ac.umn.uts_34220_rupertusherlambangekonugroho;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,10 +7,14 @@ import android.view.MenuItem;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.LinkedList;
 
 public class Library extends AppCompatActivity {
-    RecyclerView rvDaftarSfx;
+    RecyclerView rvSumberVideo;
     LibraryAdapter mAdapter;
     LinkedList<SumberVideo> daftarVideo = new LinkedList<>();
     ImageButton btnDelete;
@@ -28,21 +28,21 @@ public class Library extends AppCompatActivity {
         String namauser = mainIntent.getStringExtra("Name");
         Toast.makeText(Library.this,"Selamat Datang, " + namauser, Toast.LENGTH_LONG).show();
         getSupportActionBar(). setDisplayShowCustomEnabled(true);
-        getSupportActionBar().setTitle(namauser);
+        getSupportActionBar().setTitle("Selamat datang, " + namauser);
         isiDaftarVideo();
 
-        rvDaftarSfx = (RecyclerView) findViewById(R.id.RV);
+        rvSumberVideo = (RecyclerView) findViewById(R.id.RV);
         mAdapter = new LibraryAdapter(this, daftarVideo);
-        rvDaftarSfx.setAdapter(mAdapter);
-        rvDaftarSfx.setLayoutManager(new LinearLayoutManager(this));
+        rvSumberVideo.setAdapter(mAdapter);
+        rvSumberVideo.setLayoutManager(new LinearLayoutManager(this));
         btnDelete = (ImageButton) findViewById(R.id.btnDelete);
     }
 
     public void isiDaftarVideo(){
-        daftarVideo.add(new SumberVideo("Video 1", "Bongo Cat 1", "android.resource://" + getPackageName() + "/" + R.raw.bongo1));
-        daftarVideo.add(new SumberVideo("Video 2", "Bongo Cat 2", "android.resource://" + getPackageName() + "/" + R.raw.bongo2));
-        daftarVideo.add(new SumberVideo("Video 3", "Rick Astley", "android.resource://" + getPackageName() + "/" + R.raw.rick));
-        daftarVideo.add(new SumberVideo("Video 4", "Cat", "android.resource://" + getPackageName() + "/" + R.raw.cat));
+        daftarVideo.add(new SumberVideo("Video 1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "android.resource://" + getPackageName() + "/" + R.raw.bongo1));
+        daftarVideo.add(new SumberVideo("Video 2", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "android.resource://" + getPackageName() + "/" + R.raw.bongo2));
+        daftarVideo.add(new SumberVideo("Video 3", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "android.resource://" + getPackageName() + "/" + R.raw.rick));
+        daftarVideo.add(new SumberVideo("Video 4", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "android.resource://" + getPackageName() + "/" + R.raw.cat));
     }
 
     @Override

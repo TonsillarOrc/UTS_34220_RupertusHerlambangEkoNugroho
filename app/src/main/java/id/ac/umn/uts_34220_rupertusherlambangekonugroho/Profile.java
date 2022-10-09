@@ -1,8 +1,8 @@
-package id.ac.umn.uts_;
-
-import androidx.appcompat.app.AppCompatActivity;
+package id.ac.umn.uts_34220_rupertusherlambangekonugroho;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Profile extends AppCompatActivity {
 

@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/myname"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textColor="@color/black"
         android:layout_marginTop="20dp"/>
     <TextView
@@ -28,14 +28,12 @@
         android:layout_height="wrap_content"
         android:text="@string/nim"
         android:textSize="15sp"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="5dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/matakuliah"
-        android:textSize="15sp"
-        android:textColor="@color/black"/>
+        android:textSize="15sp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,17 +44,9 @@
     <TextView
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Modul Praktikum Mobile Programming IF570L"
-        android:textColor="@color/black"
+        android:text="Modul Praktikum Mobile Programming IF570-ELHY"
         android:gravity="center"
         android:layout_marginTop="10dp"/>
-    <TextView
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:text="https://stackoverflow.com/"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:autoLink="web"/>
     <TextView
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -67,14 +57,21 @@
     <TextView
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="https://suragch.medium.com/adding-a-menu-to-the-toolbar-in-android-60d096f9fb89"
+        android:text="https://stackoverflow.com/"
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:autoLink="web"/>
     <TextView
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="https://www.tutorialspoint.com/android/android_mediaplayer.htm"
+        android:text="https://codepolitan.com/blog/bekerja-dengan-toolbar-di-android-59e45f7190a55"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:autoLink="web"/>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="https://www.geeksforgeeks.org/videoview-in-android/"
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:autoLink="web"/>
