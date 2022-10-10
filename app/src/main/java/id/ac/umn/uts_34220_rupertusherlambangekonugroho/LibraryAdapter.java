@@ -1,12 +1,14 @@
 package id.ac.umn.uts_34220_rupertusherlambangekonugroho;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -42,8 +44,30 @@ public class LibraryAdapter extends RecyclerView.Adapter<LibraryAdapter.LibraryV
         holder.btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mDaftarVideo.remove(position);
-                notifyItemRemoved(position);
+                Dialog dialog = new Dialog(mContext);
+                dialog.setContentView(R.layout.delete_confirm);
+                dialog.setCancelable(false);
+
+                Button yes = dialog.findViewById(R.id.btnDelYes);
+                Button no = dialog.findViewById(R.id.btnDelNo);
+
+                yes.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        mDaftarVideo.remove(position);
+                        notifyItemRemoved(position);
+                        dialog.dismiss();
+                    }
+                });
+
+                no.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
+                    }
+                });
+
+                dialog.show();
             }
         });
     }
